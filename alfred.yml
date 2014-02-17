@@ -4,7 +4,7 @@
   tasks:
     - name: install Alfred
       mac_pkg: pkg_type=app
-               url=https://github.com/maarten/ansible-osx.git
+               url=http://cachefly.alfredapp.com/Alfred_2.1.1_227.zip
                archive_type=zip archive_path='Alfred 2.app'
       sudo: yes
 
