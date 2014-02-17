@@ -5,6 +5,6 @@
     - name: install KeyRemap4MacBook
       mac_pkg: pkg_type=pkg
                url=https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-9.3.0.dmg
-               archive_type=zip archive_path=KeyRemap4MacBook.pkg
+               archive_type=dmg archive_path=KeyRemap4MacBook.pkg
       sudo: yes
 
