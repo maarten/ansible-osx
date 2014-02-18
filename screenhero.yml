@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Screenhero
+      mac_pkg: pkg_type=app
+               url=http://dl.screenhero.com/update/screenhero/Screenhero.dmg, http://screenhero.com/download.html?src=btn
+               archive_type=dmg archive_path=Screenhero.app
+      sudo: yes
+

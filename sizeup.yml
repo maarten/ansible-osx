@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install SizeUp
+      mac_pkg: pkg_type=app
+               url=https://www.irradiatedsoftware.com/downloads/?file=SizeUp.zip
+               archive_type=zip archive_path='SizeUp.app'
+      sudo: yes
+

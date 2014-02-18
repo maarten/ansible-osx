@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install CCleaner
+      mac_pkg: pkg_type=app
+               url=http://download.piriform.com/mac/CCMacSetup107.dmg
+               archive_type=dmg archive_path=CCleaner.app
+      sudo: yes
+

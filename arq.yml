@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Arq
+      mac_pkg: pkg_type=app
+               url=http://www.haystacksoftware.com/arq/Arq.zip
+               archive_type=zip archive_path=Arq.app
+      sudo: yes

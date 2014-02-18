@@ -1,0 +1,9 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install AppZapper
+      mac_pkg: pkg_type=app
+               url=http://www.appzapper.com/downloads/appzapper.dmg
+               archive_type=dmg archive_path=AppZapper.app
+      sudo: yes

@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Adobe Reader
+      mac_pkg: pkg_type=pkg
+               url=http://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.04/en_US/AdbeRdr11004_en_US.dmg
+               archive_type=dmg archive_path='Adobe Reader XI Installer.pkg'
+      sudo: yes
+

@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install VLC
+      mac_pkg: pkg_type=app
+               url=http://get.videolan.org/vlc/2.1.3/macosx/vlc-2.1.3.dmg
+               archive_type=dmg archive_path=VLC.app
+      sudo: yes
+

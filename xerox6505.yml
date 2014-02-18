@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Xerox 6505 driver
+      mac_pkg: pkg_type=pkg
+               url=http://download.support.xerox.com/pub/drivers/WC6505/drivers/macosx108/pt_BR/WorkCentre_6505_OS_10.8_Print_Installer_v3.0.pkg.zip
+               archive_type=zip archive_path='WorkCentre_6505_OS_10.8_Print_Installer_v3.0.pkg'
+      sudo: yes
+
