@@ -5,5 +5,5 @@
     - name: install Watts
       mac_pkg: pkg_type=app
                url=http://www.matchingbrackets.com/abatt/customer/Watts-48.dmg
-               archive_type=zip archive_path='Watts.app'
+               archive_type=dmg archive_path='Watts.app'
       sudo: yes
