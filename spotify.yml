@@ -4,7 +4,7 @@
   tasks:
     - name: Download Spotify
       mac_pkg: pkg_type=app
-               url=https://www.spotify.com/nl/download/mac/
+               url=http://download.spotify.com/SpotifyInstaller.zip
                archive_type=zip archive_path='SpotifyInstaller.app'
       sudo: yes
 
