@@ -5,8 +5,8 @@
     - name: Download Spotify
       mac_pkg: pkg_type=app
                url=http://download.spotify.com/SpotifyInstaller.zip
-               archive_type=zip archive_path='SpotifyInstaller.app'
+               archive_type=zip archive_path='Install Spotify.app'
       sudo: yes
 
     - name: Install Spotify
-      command: open /Applications/SpotifyInstaller.app
+      command: open '/Applications/Install Spotify.app'
